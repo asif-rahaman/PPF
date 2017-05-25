@@ -1,0 +1,14 @@
+{
+    "name": "sharperedge/base",
+    "description": "Sharperedge Base",
+    "authors": [
+        {
+            "name": "Maiden Miquiabas",
+            "email": "maiden@sharperedge.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    }
+}

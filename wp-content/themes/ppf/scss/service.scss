@@ -1,0 +1,31 @@
+.services-section-1{
+	/*.wrap{
+		width:1000px;
+	}*/
+	.main-container{
+		display: table;
+		    padding-top: 15px;
+	}
+	.service-title{
+		font-family: "Times New Roman", serif;
+		font-size: 32px;
+		font-weight: 300;
+		padding-top: 15px;
+		color:#000;
+		text-align: left;
+
+		&:before{
+			content: url('../images/arrow-3.png');
+	        position: relative;
+	        padding-right: 10px;
+		}
+	}
+	.text-container{
+		float: left;
+    width: 50%;
+	}
+	.img-container{
+		    float: left;
+    width: 50%;
+	}
+}

@@ -1,0 +1,75 @@
+.contact-section-1{
+	/*.wrap{width:1000px;}*/
+	background: #d8d9d8; /* Old browsers */
+	background: -moz-linear-gradient(left, #d8d9d8 2%, #ffffff 50%, #d9d9d8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #d8d9d8 2%,#ffffff 50%,#d9d9d8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #d8d9d8 2%,#ffffff 50%,#d9d9d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d9d8', endColorstr='#d9d9d8',GradientType=1 ); /* IE6-9 */
+	
+	.contact-text-container{
+		width: 50%;
+    	float: left;
+	}
+	.contact-address{
+		width: 50%;
+    float: left;
+	}
+	.contact-page-buttons-wrap{
+		    width: 300px;
+    text-align: left;
+	}
+	.contact-page-or{
+		display: block;
+	    height: 30px;
+	    margin-top: 23px;
+	    margin-bottom: -6px;
+	        font-size: 20px;
+    font-weight: bold;
+    padding-left: 30px;
+	}
+	.contact-image img{padding-left: 40px;}
+	.contact-form-container{
+		width: 47%;
+    float: left;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-left: 25px;
+	}
+	.gform_wrapper .left_label input.medium{
+        width: 60%;
+    }
+    .gform_wrapper ul.gform_fields:not(.top_label) .gfield_label{
+    width: 34%;
+    padding-right: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    }
+    .gform_wrapper .left_label textarea.medium{
+    	width: 60%;
+    }
+    button, input[type="submit"], .button{
+    	background: #e0b450; /* Old browsers */
+	    background: -webkit-linear-gradient(#e0b450 0%, #fccf5c 47%, #fccf5c 53%, #e0b450 100%);
+	    background: -o-linear-gradient(#e0b450 0%, #fccf5c 47%, #fccf5c 53%, #e0b450 100%);
+	    background: linear-gradient(#e0b450 0%, #fccf5c 47%, #fccf5c 53%, #e0b450 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0b450', endColorstr='#e0b450',GradientType=0 ); /* IE6-9 */
+    	color:#3c2903;
+    	font-family: Arial;
+    	font-weight: normal;
+    	font-size: 18px !important;
+    	min-width: 80px !important;
+    	text-transform: capitalize !important;
+    	&:hover{
+    		color:#3c2903;
+    	}
+    }
+}
+body .gform_wrapper ul li.gfield{
+    margin-top: 4px !important;
+    margin-bottom: 0 !important;
+}
+body .gform_wrapper textarea.medium{
+     height: 100px !important;
+
+}

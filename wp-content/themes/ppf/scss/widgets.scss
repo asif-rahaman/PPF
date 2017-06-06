@@ -1,0 +1,340 @@
+﻿/*--------- Social Share Styles  -----------*/
+
+.sei-social-share {
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+.single-hero-container {
+	.sei-social-share {
+		  text-align: center;
+	}
+}
+
+.sei-social-share a {
+  background-color: #eeeeee;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  color: #ffffff;
+  font-size: 13px;
+  margin-right: 3px;
+  padding: 0 10px;
+}
+
+.sei-social-share .sei-link {     
+	display: inline-block;
+    margin-right: 3px;
+    vertical-align: top;
+	
+	a {
+	    background-color: transparent;
+		padding: 3px 10px;
+		
+		&:hover {
+			background-color: $primary_hover_colors;
+		}
+	}
+}
+
+.sei-social-share a:before { display:none }
+.sei-social-share a.facebook {  background-color:#4267b2; }
+.sei-social-share a.googleplus  { 
+
+	background-color:#FFFFFF; 
+	color:#000000; 
+	
+	.fa {
+		color:#DB4437;
+	} 
+	
+	&:hover {
+		color:#ffffff; 
+	}
+}
+
+.sei-social-share a.twitter { background-color:#00AEED; }
+.sei-social-share a.linkedin { background-color:#0077B5; }
+.sei-social-share .IN-widget a { 
+    position: relative !important;
+    top: 0 !important;
+	background-color: #076aae !important;
+	border: 1px solid #076aae !important;
+}
+
+
+.sei-social-share  .fb-like.fb_iframe_widget{
+  height: 19px;
+  position: relative;
+  top: -8px;
+}
+
+.sei-social-share a.sei-twitter {
+  margin-top: 0;
+  position: relative;
+  top: -5px;
+}
+
+.sei-social-share .fb_iframe_widget span {
+  height: 28px !important;
+}
+
+@-moz-document url-prefix() {
+	.sei-social-share a.sei-twitter {
+		margin-top: 3px;
+	}
+}
+
+/*--------- End of Social Share Styles  -----------*/
+
+/*---------   Testimonials  -----------*/
+
+
+.hms-testimonial-container {  
+
+    background-color: $testimonial_bg_color;
+    border: 1px solid;
+    border-color: $testimonial_border_color;
+    box-shadow: $testimonial_box_shadow;
+    margin-bottom: $testimonial_box_bottom_margin;
+    padding: $testimonial_box_padding;
+
+    .cf-title { 
+      font-size: $testimonial_title_font_size;
+      margin: $testimonial_title_margin;
+    }
+
+    .author {
+      margin-top: $testimonial_author_margin;
+      color: #03629a;
+      font-style: italic;
+    }
+
+    img {
+      float: left;
+      height: auto;
+      margin-right: 1%;
+      margin-top: 0;
+      width: $testimonial_image_width;
+    }
+
+}  
+
+/*---------   End of Testimonials  -----------*/
+
+.popular-posts {
+
+    .wpp-post-title  {
+        color: $link_colors;
+        display: block;
+        font-size: $body_font_size;
+        font-style: italic;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .wpp-date {
+        color: #333;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 500;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    .wpp-list {
+
+        li {
+
+            margin-left: 1.3em;
+            overflow: visible !important;
+
+            a {
+                cursor:pointer;
+            }
+
+            &:before {
+              font-family: "FontAwesome";
+              content:"\f0da";
+              color: $link_colors;
+              float: left;
+              font-size: 1.3em;
+              line-height: 0.9em;
+              margin-left: -0.8em;
+              vertical-align: top;
+            }
+
+        }
+    }
+
+}
+
+.widget_recent_entries {
+    
+    a {
+
+        color: $link_colors;
+        display: block;
+        font-size: $body_font_size;
+        font-style: italic;
+        font-weight: 600;
+        line-height: normal;
+        cursor:pointer;
+    }
+
+    li {
+
+      margin-left: 1.3em;
+
+      &:before {
+
+          font-family: "FontAwesome";
+          content:"\f0da";
+          color: $link_colors;
+          float: left;
+          font-size: 1.3em;
+          line-height: 0.9em;
+          margin-left: -0.8em;
+          vertical-align: top;
+
+      }
+
+      .post-date {
+          font-size: 0.8em;
+          font-style: italic;
+          display: block;
+          margin-top: 0;
+      }
+
+    }
+
+} 
+
+/* Tweetable Quotes */
+
+.pullquote {
+
+    background: #eeeeee none repeat scroll 0 0;
+    border-left: 3px solid #4d3347;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 15px 25px;
+
+    .tweet-quote {
+        background: rgba(0, 0, 0, 0) url("../images/quote2.png") no-repeat scroll left top;
+        padding-left: 30px;
+    }
+
+    & > p {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .attribution {
+        margin-left: 30px;
+    }
+
+
+    .attribution > span {
+        color: #bfbfbf;
+        font-family: "Lato";
+        font-size: 16px;
+    }
+
+    .attribution > span i {
+        color: #2aa9e0;
+        font-size: 30px;
+        margin-right: 5px;
+        position: relative;
+        top: 2px;
+    }
+}
+
+/* Here Images in Blog */
+.single-hero-container  img {
+	max-height:100%;
+	max-width:100%;
+}
+
+
+.single-hero-container .gsps-outer {
+  bottom: 20%;
+  position: absolute;
+  z-index: 999; }
+
+.single-hero-container {
+  animation: 0.7s ease 0.8s normal both 1 running bounce-in-up;
+  margin-bottom: 25px;
+  position: relative; }
+
+div.gsps-outer {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  width: 100%; }
+
+.single-hero-container .gsps-inner {
+  padding-top: 20px; }
+
+.single-post-float-box {
+  background-color: $primary_colors;
+  border: 3px solid #fff; 
+  padding: 15px;
+}
+
+.post-tag-cont {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  top: -17px; }
+
+.post-tag {
+  background: #32a782 none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 34px;
+  padding: 0 15px;
+  text-transform: uppercase; }
+
+.single-post-float-box > h1 {
+  color: #fff;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+  padding: 0 25px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.single-post-float-box > p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase; }
+
+.single-post-float-box p a {
+  color: #fff; }
+
+.entry-background {
+  display: block;
+  text-align: center;
+  width: 100%;
+  z-index: -99 !important; }
+
+div.gsps-inner {
+  margin: 5rem auto;
+  max-width: 800px;
+  overflow: hidden; }
+  
+  
+ .search-form {
+	input {
+		margin-bottom: 10px;
+	}
+} 

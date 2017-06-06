@@ -1,0 +1,93 @@
+﻿.site-header {
+
+	height: $header_height;
+	min-height: 60px;
+	width:100%;
+	float: left;
+	background-color: $header_background;
+	padding-top: 34px;
+
+	
+	.title-area {
+		display: none;
+	}
+	
+	.wrap {
+		padding:5px 0; 
+	}
+	
+	.widget-area {
+		float: left;
+		text-align: left;
+		width: 100%;
+	}
+	
+	.site-header-elements {
+		display: inline-block;
+		width: 100%;
+		background-color: #000;
+		
+		&>div {
+			/*height: 68px;*/
+			vertical-align: middle;
+			line-height: 40px; 
+			font-size: 21px;
+			font-weight: 700;
+			color: #bd8838;
+            font-family: 'Lato', sans-serif;
+            font-style: italic;
+		}
+		
+		#site-title {
+			display: inline-block;
+			height: 100%;
+		}
+		.site-banner-text{
+			padding-left: 25px;
+			padding-top: 10px;
+			line-height: 30px;
+		}
+	}
+
+	.call-phone {
+		display:block;
+		color: #ebc055;
+		font-family: 'Lato', sans-serif; 
+		font-size: 24px;
+		font-weight: 700;
+		font-style: normal;
+		background: -webkit-linear-gradient(#ebc055 35%, #fff);
+    	-webkit-background-clip: text;
+    	-webkit-text-fill-color: transparent;
+
+		&:before {
+			content:url('../images/icon-tetephone.png');
+			display:inline-block;
+			margin-right: 7px;
+			font-size: 36px;
+			position: relative;
+			top: 7px;
+		}
+	}	
+	.header-email {
+		margin-top: -13px;
+		display:block;
+		color: #ebc055;
+		font-family: 'Lato', sans-serif;
+		font-size: 17px;
+		font-weight: 700;
+		font-style: normal;		
+		background: -webkit-linear-gradient(#ebc055 35%, #fff);
+    	-webkit-background-clip: text;
+    	-webkit-text-fill-color: transparent; 
+
+		&:before {
+			content:url('../images/icon-email.png');
+			display:inline-block;
+			font-size: 36px;
+			position: relative;
+			top: 9px;
+			margin-right: 6px;
+		}
+	}
+}

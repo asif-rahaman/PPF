@@ -1,0 +1,123 @@
+﻿.sidebar {
+	.widget {
+		background-color: $sidebar_background_color;
+		margin-bottom: $sidebar_widget_bottom_spacing;
+		float: left;
+		padding:0;
+		width: 100%;
+		overflow:hidden;
+		
+		.widget-wrap {
+			padding-top: 0px;
+			padding-bottom: 30px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+	
+	.widget-title {
+		font-size: 18px;
+		margin-bottom: 20px;
+		background-color: $sidebar__title_background_color;
+		padding: 10px 15px;
+		color: $sidebar_widget_title_color;
+		margin-left: -15px;
+		margin-right: -15px;
+		display: inline-block;
+		width: 111%;
+	}
+	
+	li {
+		border-bottom: medium none;
+		margin-bottom: 5px;
+		padding-bottom: 2px;
+	}
+}
+
+.tagcloud { 
+
+	a {
+		text-align:center;
+		float:left;
+		margin-right: 3px;
+	}
+
+	a span {
+		color : #333333;
+		text-transform : lowercase;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		margin-bottom : 5px;
+		position: relative;
+		display: inline-block;
+		padding: 0 10px;
+		background: #eeeeee;
+		-webkit-transition: -webkit-transform 0.3s;
+		-moz-transition: -moz-transform 0.3s;
+		transition: transform 0.3s;
+		-webkit-transform-origin: 50% 0;
+		-moz-transform-origin: 50% 0;
+		transform-origin: 50% 0;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+
+	a span::before {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background:$btn_primary_bg_color;
+		content: attr(data-hover);
+		-webkit-transition: background 0.3s;
+		-moz-transition: background 0.3s;
+		transition: background 0.3s;
+		-webkit-transform: rotateX(-90deg);
+		-moz-transform: rotateX(-90deg);
+		transform: rotateX(-90deg);
+		-webkit-transform-origin: 50% 0;
+		-moz-transform-origin: 50% 0;
+		transform-origin: 50% 0;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-top:1px solid #FFF;
+		color:#FFFFFF;
+	}
+
+	a:hover span,
+	a:focus span {
+		-webkit-transform: rotateX(90deg) translateY(-22px);
+		-moz-transform: rotateX(90deg) translateY(-22px);
+		transform: rotateX(90deg) translateY(-22px);
+	}
+
+	a:hover  span::before,
+	a:focus span::before {
+		background: #0080B7;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		border-top:medium none;
+		color:#FFF;
+	}
+}
+
+/* ie10 fix */
+.no-cssreflections .sidebar .tagcloud a span:before {
+	display:none;
+}
+
+.no-cssreflections .sidebar .tagcloud a:hover span {
+	color:#fff;
+	background:#503048;
+}
+
+.no-cssreflections .sidebar .tagcloud a:hover span {
+	-webkit-transform:none;
+	-moz-transform:none;
+	-o-transform:none;
+	transform: none
+} 

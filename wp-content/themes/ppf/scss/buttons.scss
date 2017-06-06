@@ -1,0 +1,33 @@
+﻿button, 
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"], 
+.button {
+    background-color: $primary_hover_colors;
+    border: 0;
+    color: $btn_primary_text_color;
+    cursor: pointer;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 6px 30px;
+    text-transform: uppercase;
+    width: auto;
+	font-weight:600;
+	
+	&:hover {
+	    background-color: $btn_primary_hover_bg_color;
+		color: $btn_primary_hover_text_color;
+	}
+	
+	&:before {
+		display:none;
+	}
+}
+
+.read-more-container {
+    float: right;
+    margin-top: 15px;
+}
+
+.new-test-btn{float:right;}

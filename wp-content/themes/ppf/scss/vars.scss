@@ -1,0 +1,104 @@
+﻿/* Base */
+$primary_font: Lato, sans-serif !default; 
+$body_font_size: 18px  !default; 
+$body_font_color: #333333 !default; 
+
+$primary_colors: #000 !default;
+$primary_hover_colors: #b58032 !default;
+
+
+/* Widths */
+$container_max_width: 1170px !default;
+$content_wrapper_max_width: 1000px !default;
+
+/* Header Variables */
+
+$header_height: 170px !default;
+$header_background: #000 !default;
+
+/* Colours */
+
+$link_colors: $primary_colors;
+$link_colors_hover: $primary_hover_colors;
+$primary_nav_colors : $primary_colors;
+$primary_nav_link_colors: #FFFFFF !default; 
+$primary_nav_colors_hover : $primary_hover_colors;
+$primary_nav_link_colors_hover: #FFFFFF !default; 
+
+$sidebar_background_color: #000 !default; 
+$sidebar__title_background_color: $primary_colors;
+$sidebar_widget_title_color: #FFFFFF !default; 
+$sidebar_entry_content_background_color: #FFFFFF !default; 
+
+$btn_primary_bg_color: $primary_colors;
+$btn_primary_text_color:  #FFFFFF !default; 
+$btn_primary_hover_bg_color: $primary_hover_colors;
+$btn_primary_hover_text_color:  #FFFFFF !default;
+
+$home_odd_bg: #fff !default;
+$home_even_bg: #000 !default;
+
+$footer_background_color: #000 !default;
+$footer_text_color: #FFFFFF !default;
+$footer_link_color: #FFFFFF !default;
+
+
+/* Typography */
+
+$h1-size: 40px !default;
+$h2-size: 32px !default;
+$h3-size: 24px !default;
+$h4-size: 20px !default;
+$h5-size: 18px !default;
+$h6-size: 17px !default;
+
+$primary_nav_size : 18px !default;
+$entry-title-colors: #121212;
+
+/* Navigation */
+$primary_nav_padding: 15px 25px !default;
+
+/* Forms */
+
+$forms_padding: 10px 10px !default;
+
+/* Spacing */
+
+$headers_h1_spacing: 0 0 20px 0 !default;
+$headers_spacing: 20px 0 20px 0 !default;
+$sections_spacing: 40px 20px !default;
+$inner_content_spacing: 30px 0 !default;
+$inner_content_top_bottom_spacing:40px !default;
+$sidebar_widget_bottom_spacing:20px !default;
+$p_margin: 0 0 10px !default;
+
+/* Plugins or Widget Vars */
+
+$testimonial_bg_color: #f1f1f1 !default;
+$testimonial_border_color: #EEEEEE !default;
+$testimonial_box_shadow: 1px 1px 10px #ddd !default;
+$testimonial_box_bottom_margin: 30px !default;
+$testimonial_box_padding: 20px !default;
+$testimonial_title_font_size: $h2-size !default;
+$testimonial_title_margin: 0 0 16px 0 !default;
+$testimonial_author_margin: 16px 0 0 0 !default;
+$testimonial_image_width: 100px !default;
+$testimominal_author_color: #03629a !default;
+
+
+/* Responsive Breakpoints */
+
+/* Desktops and laptops ----------- */
+$screen_large: 1224px !default;
+
+/* Tablets ----------- */
+$screen_medium: 1024px !default;
+
+
+/* Mobile ----------- */
+$screen_small: 768px !default;
+
+/* Order List */
+
+$ol_list_icon_color : $primary_colors;
+$ol_list_icon:"\f111";

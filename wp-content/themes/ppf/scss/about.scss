@@ -1,0 +1,229 @@
+.header-tittle{
+	font-family: "Times New Roman", serif;
+	font-size: 40px;
+    font-weight: 300;
+    padding-top: 15px;
+    color:#121212;
+}
+
+.about-text-bold{
+	font-weight: 700;
+	font-size: 20px;
+}
+.about-section1{
+	background: #fff;
+	text-align: left;
+	/*.wrap{width:943px;}*/
+	.about-text-holder{
+		width: 69%;
+    	float: left;
+	}
+	.about-img{
+		padding-left: 35px;
+    float: left;
+	}
+
+}
+.about-section-2{
+	background: #d8d9d8; /* Old browsers */
+	background: -moz-linear-gradient(left, #d8d9d8 2%, #ffffff 50%, #d9d9d8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #d8d9d8 2%,#ffffff 50%,#d9d9d8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #d8d9d8 2%,#ffffff 50%,#d9d9d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d9d8', endColorstr='#d9d9d8',GradientType=1 ); /* IE6-9 */
+	/*.wrap{width:943px;} */
+	.pm-box-container{
+		display: flex;
+	    padding-top: 16px;
+	    padding-bottom: 20px;
+	    clear: both;
+	}
+	.aside-pm-box-text-container{
+		float: left;
+    width: 43%;
+    padding-bottom: 35px;
+	}
+	.about-pm-box{
+		background: url('../images/bg-black.jpg');
+		background-position: 502px 173px;
+		width: 504px;
+    padding: 10px;
+    padding-left: 17px;
+    border-radius: 6px;
+    border: 2px solid #CFA35C;
+    float: left;
+    margin-left: 23px;
+    box-shadow: -7px 10px 8px #C0C0C0;
+	}
+	.pm-header{
+		font-family: "Times New Roman", serif;
+		font-size: 28px;
+	    font-weight: 300;
+	    color:#dfc268;
+	    font-style: italic;
+	    line-height: 9px;
+	    text-align: left;
+	}
+	.pm-text{
+		font-family: 'Lato', sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		color: #ffffff;
+		line-height: 24px;
+		clear: both;
+		text-align: left; 
+	}
+	.tracey-signature{
+		float: left;
+    padding-bottom: 30px;
+    padding-top: 15px;
+	}
+}
+.city-list{
+	font-family: 'Lato', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	color: #39393e;
+	text-align: center;
+}
+.city-list li{ display: inline-block;}
+.partner-bullet:first-child:before{display: none;}
+.partner-bullet:before{
+	content: url('../images/bullet.png');
+	position: relative;
+top: 2px;
+padding-left: 8px;
+padding-right: 8px;
+}
+.our-partner-section-1{
+	background: #6c6d6c; /* Old browsers */
+	background: -moz-linear-gradient(left, #6c6d6c 0%, #ffffff 50%, #707171 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #6c6d6c 0%,#ffffff 50%,#707171 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #6c6d6c 0%,#ffffff 50%,#707171 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c6d6c', endColorstr='#707171',GradientType=1 ); /* IE6-9 */
+	/*.wrap{
+		width:943px;
+	}*/
+		.entry-header{ 
+		font-family: "Times New Roman", serif;
+		font-size: 35px;
+    font-weight: 300;
+    padding-top: 15px;
+    color:#000;
+    text-align: center;
+        padding-bottom: 20px;
+   }
+  .partner-container{
+  	background-color:#000; 
+  	background: url('../images/bg-black-partners.jpg');
+  	display: table;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    background-size: cover;
+    margin-bottom: 30px;
+  	.partner-info {
+  		    float: left;
+    width: 50%;
+    display: table;
+  	}
+  	.parter-profile-img{
+  		    float: left;
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  	}
+  	.partner-company-logo{
+  		    padding-top: 39px;
+    padding-bottom: 17px;
+  	}
+  	.partner-web{
+  		    color: #bc8c1c;
+    padding-top: 20px;
+    clear: both;
+    display: block;
+  	}
+  	.partner-city-image{
+  		width: 50%;
+    	float: left;
+
+    	img{
+    		padding-left: 28px;
+    		padding-top: 20px;
+    	}
+    	.city-name{
+		    display: inline-block;
+		    background: url(../images/city-golden-bg.png);
+		    font-size: 20px;
+		    padding: 8px 38px;
+		    position: relative;
+		    top: 42px;
+		    color: #000;
+		    vertical-align: middle;
+		    left: 3px;
+		    &:before{
+	    		content: url(../images/city-tittle-clip.png);
+	    		position: absolute;
+				top: 39px;
+				left: 0px;
+		    }
+    	}
+  	}
+  	p{
+  		color: #ffffff;
+  	}
+  	img{
+  		    display: inline-block;
+    vertical-align: top;
+
+  	}
+
+  }
+
+}
+
+.testimonial-section-1, .page-id-126  article.post-126{
+	background: #dadada; /* Old browsers */
+	background: -moz-linear-gradient(left, #dadada 0%, #ffffff 50%, #d9d9da 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #dadada 0%,#ffffff 50%,#d9d9da 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #dadada 0%,#ffffff 50%,#d9d9da 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadada', endColorstr='#d9d9da',GradientType=1 ); /* IE6-9 */
+	/*.wrap{
+		width: 943px;
+		text-align: center;
+	}*/
+	p{
+		margin-bottom: 20px;
+	}
+	.written-testimonial-text{
+		margin-top: 20px;
+    	color: #000;
+	}
+	.testimonial-box{
+		background-color:#000; 
+	  	background: url('../images/bg-black-partners.jpg');
+	  	background-size: cover;
+	  	display: table;
+	  	border: 2px solid #CDA44A;
+	  	padding: 10px 20px;
+    	border-radius: 7px;
+    	margin-bottom: 40px;
+    	p{
+		color: #ffffff;
+	   }
+	}
+	.client-name{
+		color:#F6DA87;
+		.emp{
+			font-family: "Times New Roman", serif;
+			font-size: 28px;
+		    font-weight: 300;
+		    font-style: italic;
+		}
+		font-weight: 400;
+		font-size: 20px;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+	}
+}

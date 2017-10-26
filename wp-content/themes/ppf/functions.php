@@ -1,6 +1,6 @@
 <?php
 
-$development = 1;
+$development = 0;
 
 if($development){
 	/* Display Errors on Development */
@@ -136,6 +136,7 @@ genesis_register_sidebar( array(
 	'description' => __( 'This is the footer 3 widget  area.', 'parallax' ),
 ) );
 
+
 //Site Header Customization
 
 function sei_custom_header($atts) {
@@ -144,7 +145,8 @@ function sei_custom_header($atts) {
 ?>	
 	<div class="site-header-elements">
 		<div class="col-xs-12 col-sm-3 col-md-3 align-left"><?php echo do_shortcode("[sei_get_logo]"); ?></div>
-		<div class="col-xs-12 col-sm-6 col-md-6 align-left site-banner-text mobile-display-none tablet-display-none">Tracey Chandler - <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uncovering The Most Exclusive Luxury Properties In Sydney</div>
+		<!-- <div class="col-xs-12 col-sm-6 col-md-6 align-left site-banner-text mobile-display-none tablet-display-none">Tracey Chandler - <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uncovering The Most Exclusive Luxury Properties In Sydney</div> -->
+		<div class="col-xs-12 col-sm-6 col-md-6 align-left site-banner-text mobile-display-none tablet-display-none"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/tagline.jpg" alt="uncovering the most exclusive luxury properties in Sydney"></div>
 		<div id="header-phone-container" class="col-xs-12 col-sm-6 col-md-3 alignright tablet-right"><?php echo do_shortcode("[sei_telnum_link label='header' type='".$phone_type."']"); ?>
 			<a class="header-email" href="mailto:tracey@ppf-sydney.com.au">tracey@ppf-sydney.com.au</a>
 		</div>
@@ -158,29 +160,40 @@ function after_nav_paralax_effect(){
 }
 add_action('genesis_after_header','after_nav_paralax_effect' );
 
+//Footer Menu
+function register_additional_menu() {
+  
+	register_nav_menu( 'footer-menu' ,__( 'Footer Menu' ));
+     
+	}
+add_action( 'init', 'register_additional_menu' );
+
+function print_menu_shortcode($atts, $content = null) {
+    extract(shortcode_atts(array( 'name' => null, ), $atts));
+    return wp_nav_menu( array( 'menu' => $name, 'echo' => false, 'container'=> false ) );
+}
+add_shortcode('menu', 'print_menu_shortcode');
 
 //Copyright_custom
 
 function sei_custom_copyright_func($atts, $content) {
 
-	$html = "<span class='copyright'>Copyright  &copy; ".date("Y")."  |  ".get_bloginfo('name');
+	$html = "<span class='copyright'>Copyright  &copy; ".date("Y")." ".get_bloginfo('name'). "  -  ";
+	$html .= do_shortcode(" [menu name='Footer Menu']" );
 
 	if( is_front_page() ) {
 		$html .= "<span class='sei'>  |  Web Development by <a href='http://sharperedge.net/' target='_blank' title='Sharper Edge International'>Sharper Edge International</a></span>";
 	}
-	
-	$html .="</span>";
-	// $html .= '<a href="#" class="scroll-to-bottom"><i class="fa fa-arrow-down"></i><span>Scroll Down</span></a>';
-	// $html .= '<a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i><span>Back To Top</span></a>';
-
+	$html .= "</span>";
 	return $html;
 }
+
 
 //Copyright-Footer
 function add_sei_copyright(){
 	echo "<div class='sei-copyright-container'>".do_shortcode('[sei_copyright]')."</div>";
 }
-add_action('genesis_footer','add_sei_copyright',30 );
+add_action('genesis_footer','add_sei_copyright',50 );
 
 
 
@@ -213,6 +226,7 @@ add_filter('genesis_pre_load_favicon', 'sei_custom_favicon' );
 
 /* ============================================ Start of Add Actions ====================================================  */
 
+//add_action('genesis_footer', 'sei_base_footer'); //html for custom footer
 add_action('genesis_footer', 'sei_custom_footer');
 add_action('genesis_entry_content', 'sei_blog_list_featured_image', 6);
 add_action('genesis_before_content', 'sei_blog_list_title', 20 );

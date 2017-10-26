@@ -34,7 +34,7 @@ p {
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
-	color: #333;
+	color: #494949;
 	line-height: 24px;
 }
 
@@ -216,16 +216,47 @@ p:empty {
     padding-bottom:2px;
 }
 .footer-text{
+	margin-top: 0;
+}
+.footer-text, .footer-text a{
 	font-family: 'Lato', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	text-align: left;
 	color:#ffffff;
 }
-
-.site-footer .menu-item { display:inline; margin-right: 5px; }
-.site-footer .menu-item a, .sei a { color: $footer_link_color; }
-.site-footer .menu { margin-bottom: 8px; }
+.footer-text a:hover{
+	color:#b58032;
+}
+.footer-text a.call-phone:before{
+	content: url('../images/icons/icon-telephone.png');
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 36px;
+    position: relative;
+    top: 10px;
+}
+.footer-text.mail a:before{
+    content: url('../images/icons/icon-email.png');
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 36px;
+    position: relative;
+    top: 10px;
+}
+#text-11 p.footer-text {
+    margin-left: -50px;
+    margin-top: -25px;
+}
+.footer-text img {
+    padding-right: 10px;
+    top: 10px;
+    position: relative;
+}
+.sei-copyright-container .menu{display: inline;}
+.sei-copyright-container .menu-item { display:inline; margin-right: 5px; }
+.sei-copyright-container .menu-item a, .sei a { color: #b1b1b1; }
+.sei-copyright-container .menu { margin-bottom: 8px; }
 .sei-copyright-container{
 	background: #171819;
     display: block;

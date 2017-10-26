@@ -1,7 +1,7 @@
 ﻿/* Base */
 $primary_font: Lato, sans-serif !default; 
 $body_font_size: 18px  !default; 
-$body_font_color: #333333 !default; 
+$body_font_color: #494949 !default; 
 
 $primary_colors: #000 !default;
 $primary_hover_colors: #b58032 !default;
@@ -13,7 +13,7 @@ $content_wrapper_max_width: 1000px !default;
 
 /* Header Variables */
 
-$header_height: 170px !default;
+$header_height: 150px !default;
 $header_background: #000 !default;
 
 /* Colours */
@@ -45,18 +45,18 @@ $footer_link_color: #FFFFFF !default;
 
 /* Typography */
 
-$h1-size: 40px !default;
-$h2-size: 32px !default;
+$h1-size: 36px !default;
+$h2-size: 28px !default;
 $h3-size: 24px !default;
-$h4-size: 20px !default;
-$h5-size: 18px !default;
-$h6-size: 17px !default;
+$h4-size: 22px !default;
+$h5-size: 20px !default;
+$h6-size: 18px !default;
 
 $primary_nav_size : 18px !default;
 $entry-title-colors: #121212;
 
 /* Navigation */
-$primary_nav_padding: 15px 25px !default;
+$primary_nav_padding: 11px 25px !default;
 
 /* Forms */
 
@@ -70,7 +70,7 @@ $sections_spacing: 40px 20px !default;
 $inner_content_spacing: 30px 0 !default;
 $inner_content_top_bottom_spacing:40px !default;
 $sidebar_widget_bottom_spacing:20px !default;
-$p_margin: 0 0 10px !default;
+$p_margin: 10px 0 10px !default;
 
 /* Plugins or Widget Vars */
 

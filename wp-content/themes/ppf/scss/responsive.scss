@@ -11,11 +11,11 @@
 @media only screen  and (min-width : 769px) {
 
 	.sticky-wrapper { 
-		height: 170px !important; 
+		height: 150px !important; 
 	}
 	.nav-primary{	
 		position: absolute;
-    	top: 122px;
+    	top: 110px;
 	}
 
 
@@ -117,9 +117,9 @@
 //width i to 1024px
 @media only screen  and (min-width : $screen_medium) {
 
-	.home-section-1, .single-hero-container {
+	/*.home-section-1, .single-hero-container {
 		min-height:86vh;
-	}
+	}*/
 }
 
 
